@@ -74,17 +74,17 @@ DOOM_HEIGHT = "600"
 ---
 
 ## Limitations
-No audio support
-Mouse input is not reliable
-Single-session environment
-Dependent on Google Colab runtime
+- No audio support
+- Mouse input is not reliable
+- Single-session environment
+- Dependent on Google Colab runtime
 
 ---
 
 ## Notes
-The framebuffer resolution must match the DOOM rendering resolution
-Lower resolution reduces resource usage
-Higher resolution improves visual clarity
+- The framebuffer resolution must match the DOOM rendering resolution
+- Lower resolution reduces resource usage
+- Higher resolution improves visual clarity
 
 ---
 
