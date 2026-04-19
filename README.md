@@ -16,15 +16,11 @@ This project focuses on system architecture and reproducibility rather than perf
 
 ## Architecture
 
-PrBoom+ (DOOM Engine)
-↓
-Xvfb (Virtual Framebuffer)
-↓
-x11vnc (VNC Server)
-↓
-noVNC + websockify (WebSocket Bridge)
-↓
-Browser (Google Colab iframe)
+1. PrBoom+ (DOOM Engine)
+2. Xvfb (Virtual Framebuffer)
+3. x11vnc (VNC Server)
+4. noVNC + websockify (WebSocket Bridge)
+5. Browser (Google Colab iframe)
 
 
 ---
