@@ -1,18 +1,9 @@
 # ColabDoom
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Zharif-110305/ColabDoom/blob/main/ColabDoom.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OQ29Bw7lKbrbz0W8Shj3JgpKHRidRWOT?usp=sharing)
 
 Run the classic DOOM engine inside Google Colab using a headless virtual display pipeline and access it directly through a web browser.
-
----
-
-## Demo
-
 ![DOOM Cover](https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg)
-
-![DOOM Gameplay](https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif)
-
----
 
 ## Overview
 
@@ -23,3 +14,79 @@ This project focuses on system architecture and reproducibility rather than perf
 ---
 
 ## Architecture
+
+PrBoom+ (DOOM Engine)
+↓
+Xvfb (Virtual Framebuffer)
+↓
+x11vnc (VNC Server)
+↓
+noVNC + websockify (WebSocket Bridge)
+↓
+Browser (Google Colab iframe)
+
+
+---
+
+## Tech Stack
+
+- PrBoom+ — DOOM engine source port  
+- Freedoom — open-source DOOM-compatible assets  
+- Xvfb — virtual display server  
+- x11vnc — VNC server  
+- noVNC — HTML5 VNC client  
+- websockify — WebSocket proxy  
+
+---
+
+## How to Run
+
+1. Open the notebook in Google Colab  
+2. Run all cells sequentially  
+3. Wait for initialization  
+4. DOOM will appear in the embedded browser view  
+
+---
+
+## Controls
+
+| Key | Action |
+|-----|--------|
+| WASD / Arrow Keys | Movement |
+| Ctrl | Fire |
+| Space | Interact |
+| Shift | Run |
+| Alt + Arrow | Strafe |
+
+> Mouse input is disabled due to limitations in browser-based VNC environments.
+
+---
+
+## Configuration
+
+```python
+DISPLAY = ":99"
+RESOLUTION = "800x600x16"
+DOOM_WIDTH = "800"
+DOOM_HEIGHT = "600"
+
+---
+
+## Limitations
+No audio support
+Mouse input is not reliable
+Single-session environment
+Dependent on Google Colab runtime
+
+---
+
+## Notes
+The framebuffer resolution must match the DOOM rendering resolution
+Lower resolution reduces resource usage
+Higher resolution improves visual clarity
+
+---
+
+## Disclaimer
+
+This project is intended for educational and demonstration purposes only.
