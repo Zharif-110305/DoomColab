@@ -3,6 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1OQ29Bw7lKbrbz0W8Shj3JgpKHRidRWOT?usp=sharing)
 
 Run the classic DOOM engine inside Google Colab using a headless virtual display pipeline and access it directly through a web browser.
+
 ![DOOM Cover](https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg)
 
 ## Overview
@@ -69,7 +70,7 @@ DISPLAY = ":99"
 RESOLUTION = "800x600x16"
 DOOM_WIDTH = "800"
 DOOM_HEIGHT = "600"
-
+```
 ---
 
 ## Limitations
